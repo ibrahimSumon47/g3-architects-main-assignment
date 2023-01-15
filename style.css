@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #FF900E;
+    --secondary-color: whitesmoke;
+}
+
+/* Header company section  */
+header {
+    background-color: #FF900E1A;
+}
+
+.company {
+    display: flex;
+}
+
+.company-name {
+    /* width: 302px;
+    height: 53px; */
+    font-weight: 500px;
+    font-size: 45px;
+    margin: 50px 673px 102px 228px;
+}
+
+.menu {
+    margin-top: 63px;
+}
+
+.menu a {
+    padding: 40px;
+}
+
+/* Header banner section  */
+
+.banner {
+    margin: 0 529px 33px;
+    text-align: center;
+}
+
+.banner-title {
+    /* width: 862px; */
+    height: 180px;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.banner-description {
+    color: #727272;
+    margin-bottom: 33px;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.banner-image {
+    width: 1440px;
+    height: 700px;
+    margin: 50px 240px;
+}
+
+/* Main section first part */
+
+.main {
+    /* display: flex; */
+}
+
+.main-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.main-title {
+    width: 468px;
+    height: 106px;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+#quick-list{
+    color: #727272;
+    font-weight: 500px;
+}
+
+#features{
+    color: var(--primary-color);
+}
