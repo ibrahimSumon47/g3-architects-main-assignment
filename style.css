@@ -5,11 +5,12 @@
 :root {
     --primary-color: #FF900E;
     --secondary-color: whitesmoke;
+    --background-color: #FF900E1A;
 }
 
 /* Header company section  */
 header {
-    background-color: #FF900E1A;
+    background-color: var(--background-color);
 }
 
 .company {
@@ -130,6 +131,7 @@ header {
     height: 53px;
     font-weight: 700;
     font-size: 45px;
+    margin-bottom: 25px;
 }
 
 .fact-description {
@@ -137,4 +139,94 @@ header {
     height: 52px;
     font-weight: 400;
     font-size: 16px;
+}
+
+/* Box sector  */
+
+.main-box {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+/* .main-box :hover{
+    transform: rotate(90deg);
+} */
+
+.box {
+    /* border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    width: 150px;
+    height: 81px;
+    padding: 30px;
+    text-align: center; */
+}
+
+.box :hover {
+    transform: none;
+}
+
+.box-number {
+    margin-bottom: 10px;
+}
+
+.box-details {
+    margin-bottom: 10px;
+}
+
+.hovering {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    width: 150px;
+    height: 81px;
+    padding: 30px;
+    text-align: center;
+}
+
+.hovering :hover {
+    transform: rotate(90deg)
+}
+
+/* Sponspors sector  */
+
+.sponspors {
+    text-align: center;
+    align-items: center;
+}
+
+.sponspors-title {
+    width: 327px;
+    height: 53px;
+    font-weight: 700;
+    font-size: 45px;
+    margin: 180px 796px 24px 797px;
+}
+
+.sponspors-description {
+    width: 542px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin: 24px 689px 50px 689px;
+}
+
+.sponspors-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+/* copywrite section */
+
+.copywrite {
+    background-color: var(--background-color);
+    padding: 39px 410px;
+    margin: 130px 240px 216px 240px;
+    text-align: center;
+    width: 620px;
+    height: 23px;
+    font-weight: 400;
+    font-size: 20px;
 }
