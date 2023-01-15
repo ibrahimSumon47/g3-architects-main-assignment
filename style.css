@@ -67,15 +67,31 @@ header {
     margin: 50px 240px;
 }
 
-/* Main section first part */
+/* Quick list of Our Features part */
 
 .main {
-    /* display: flex; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main-image{
+.main-image {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 85px 73px 130px 301px;
+    width: 342px;
+    border-radius: 8px;
+}
+
+.main-image img {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.main-text {
+    width: 537px;
+    height: 304px;
+    margin: 50px 301px 0 0;
 }
 
 .main-title {
@@ -83,13 +99,41 @@ header {
     height: 106px;
     font-weight: 500;
     font-size: 45px;
+    margin-bottom: 24px;
+    margin-left: 75px;
 }
 
-#quick-list{
+#quick-list {
     color: #727272;
     font-weight: 500px;
 }
 
-#features{
+#features {
     color: var(--primary-color);
+}
+
+.main-description {
+    color: #727272;
+    margin-bottom: 24px;
+    margin-left: 75px;
+}
+
+.main-text .btn-primary {
+    margin-left: 75px;
+}
+
+/* Some facts section  */
+
+.fact-title {
+    width: 258px;
+    height: 53px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.fact-description {
+    width: 542px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
 }
