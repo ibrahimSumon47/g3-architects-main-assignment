@@ -19,8 +19,6 @@ header {
 }
 
 .company-name {
-    /* width: 302px;
-    height: 53px; */
     font-weight: 500px;
     font-size: 45px;
     margin: 50px 673px 102px 228px;
@@ -48,7 +46,7 @@ header {
 }
 
 .banner-description {
-    color: #727272;
+    color: var(--text-color);
     margin-bottom: 33px;
 }
 
@@ -64,8 +62,8 @@ header {
 }
 
 .banner-image {
-    width: 1440px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     margin: 50px 240px;
 }
 
@@ -196,7 +194,7 @@ header {
 .exp {
     font-weight: 500;
     font-size: 25px;
-    
+
 }
 
 /* Some facts section  */
@@ -228,8 +226,6 @@ header {
     box-sizing: border-box;
     margin-top: 100px;
 }
-
-.box {}
 
 .box :hover {
     transform: none;
@@ -299,3 +295,205 @@ header {
     font-weight: 400;
     font-size: 20px;
 }
+
+/* Starting mobile responsible sector  */
+
+@media only screen and (max-width:667px) {
+
+    /* Header company section  */
+    .company {
+        display: grid;
+        grid-template-columns: 0;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+    .company-name {
+        margin: 0px 20px;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .menu a {
+        margin: 20px;
+        padding: 0;
+    }
+
+    /* Header banner section  */
+
+    .banner {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .banner-title {
+        height: 80px;
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    .banner-description {
+        color: var(--text-color);
+        margin-top: 150px;
+    }
+
+    .btn-primary {
+        width: 180px;
+        height: 64px;
+        background-color: var(--primary-color);
+        border-radius: 8px;
+        color: var(--secondary-color);
+        font-weight: 600;
+        font-size: 20px;
+        border: none;
+        margin-top: 20px;
+    }
+
+    .banner-image {
+        margin: auto 60px auto 0px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: 100%;
+        margin: 10px 50px 30px 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    /* Quick list of Our Features part */
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .main-image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto 60px auto 10px;
+        width: 342px;
+        border-radius: 8px;
+        flex-direction: column;
+    }
+
+    .main-title {
+        width: 468px;
+        height: 106px;
+        font-weight: 500;
+        font-size: 45px;
+        margin-bottom: 24px;
+        margin-left: 10px;
+    }
+
+    .main-description {
+        color: var(--text-color);
+        margin-bottom: 24px;
+        margin-right: 200px;
+        margin-left: 10px;
+    }
+
+    .main-text .btn-primary {
+        margin-left: 75px;
+    }
+
+    /* Some facts section  */
+
+    .facts {
+        margin: 130px 1138px 0 20px;
+    }
+
+    .fact-description {
+        width: 350px;
+        height: 30px;
+    }
+
+    /* Box sector  */
+
+    .main-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        margin-top: 100px;
+
+    }
+
+    .box :hover {
+        transform: none;
+    }
+
+    .box-number {
+        margin-bottom: 10px;
+    }
+
+    .box-details {
+        margin-bottom: 10px;
+    }
+
+    .hovering {
+        border: 1px solid var(--primary-color);
+        border-radius: 8px;
+        width: 150px;
+        height: 81px;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-left: 60px;
+    }
+
+    .hovering :hover {
+        transform: rotate(90deg)
+    }
+
+    /* Sponspors sector  */
+
+    .sponspors {
+        text-align: left;
+    }
+
+    .sponspors-title {
+        margin: 20px 0 0 0;
+    }
+
+    .sponspors-description {
+        width: 400px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--text-color);
+        margin: 20px 0 0 0;
+    }
+
+    .sponspors-image {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+
+    }
+
+    .sponspors-image img {
+        padding: 20px;
+    }
+
+    /* copywrite part  */
+    .copywrite {
+        background-color: var(--background-color);
+        margin: 50px 0 0 0;
+        padding: 0 0 0 0;
+        width: 400px;
+        height: 30px;
+        text-align: start;
+    }
+
+    .features{
+        display: none;
+    }
+    }
