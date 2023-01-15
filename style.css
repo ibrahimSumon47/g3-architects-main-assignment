@@ -6,6 +6,7 @@
     --primary-color: #FF900E;
     --secondary-color: whitesmoke;
     --background-color: #FF900E1A;
+    --text-color: #727272;
 }
 
 /* Header company section  */
@@ -41,7 +42,6 @@ header {
 }
 
 .banner-title {
-    /* width: 862px; */
     height: 180px;
     font-weight: 700;
     font-size: 64px;
@@ -106,7 +106,7 @@ header {
 }
 
 #quick-list {
-    color: #727272;
+    color: var(--text-color);
     font-weight: 500px;
 }
 
@@ -115,7 +115,7 @@ header {
 }
 
 .main-description {
-    color: #727272;
+    color: var(--text-color);
     margin-bottom: 24px;
     margin-left: 75px;
 }
@@ -124,7 +124,86 @@ header {
     margin-left: 75px;
 }
 
+/* Feature Details styles */
+.features {
+    display: flex;
+    margin: auto 240px 130px 240px;
+    justify-content: space-between;
+}
+
+.features-info {
+    width: 468px;
+}
+
+.features-info .features-title {
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 20px;
+    border-left: 5px solid var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.features-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.features-info-box {
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.info-box {
+    width: 586px;
+    height: 160px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    justify-content: center;
+    padding: 30px 30px 30px 40px;
+    margin-bottom: 20px;
+}
+
+.box-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.features-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    width: 342px;
+    height: 200px;
+}
+
+.btn-title {
+    margin: 40px;
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.exp {
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+
 /* Some facts section  */
+
+.facts {
+    margin: 130px 1138px 0 240px;
+}
 
 .fact-title {
     width: 258px;
@@ -147,20 +226,10 @@ header {
     display: flex;
     justify-content: space-evenly;
     box-sizing: border-box;
+    margin-top: 100px;
 }
 
-/* .main-box :hover{
-    transform: rotate(90deg);
-} */
-
-.box {
-    /* border: 1px solid var(--primary-color);
-    border-radius: 8px;
-    width: 150px;
-    height: 81px;
-    padding: 30px;
-    text-align: center; */
-}
+.box {}
 
 .box :hover {
     transform: none;
