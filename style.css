@@ -183,6 +183,9 @@ header {
     border: none;
     width: 342px;
     height: 200px;
+    position: absolute;
+    left: 920px;
+    top: 3104px;
 }
 
 .btn-title {
@@ -493,7 +496,11 @@ header {
         text-align: start;
     }
 
-    .features{
+    .features {
         display: none;
     }
+
+    .features-btn{
+        position: static;
     }
+}
